@@ -23,7 +23,7 @@
     <main class="container">
 
         <h1 class="visually-hiddden">Город Седона</h1>
-        <img src="img/velcome-page.jpg" width="1200" height="773">
+        <img src="img/welcome-page.jpg" width="1200" height="773" alt="Страница приветствия">
 
         <p>Седона- небольшой городок в Аризоне, заслуживающий большего!</p>
 
@@ -38,7 +38,32 @@
         <section class="offer">
             <h2 class="visually-hidden">Лучшее предложение</h2>
             <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <!-- Здесь будет Форма -->
+        </section>
+        <section class="booking">
+            <h2>Поиск гостиницы в седоне</h2>
+            <form class="booking-form" action="#" method="post">
+                <p class="booking-item">
+                    <label for="date-in">Дата заезда:</label>
+                    <input type="date" name="date" id="date-in">
+                </p>
+                <p class="booking-item">
+                   <label for="date-out">Дата выезда:</label>
+                   <input type="date" name="date" id="date-out">
+                </p>
+                <p class="booking-item">
+                    <label for="adult-amount">Взрослые:</label>
+                    <button class="button-" type="button">-</button>
+                    <input type="button" name="adult" id="adult-amount" value="2">
+                    <button class="button+" type="button">+</button>
+                </p>
+                <p class="booking-item">
+                    <label for="children-amount">Дети:</label>
+                    <button class="button-" type="button">-</button>
+                    <input type="button" name="children" id="children-amount" value="0">
+                    <button class="button+" type="button">+</button>
+                </p>
+                <button class="button" type="submit">Найти</button>
+            </form>
         </section>
     </main>
     <footer class="main-footer">
